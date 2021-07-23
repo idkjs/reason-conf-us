@@ -30,7 +30,7 @@ let make = (~greeting) => {
 
   let message =
     "You've clicked this " ++ string_of_int(state.count) ++ " times(s)";
-  <React.DOM.div>
+  <div>
     <button onClick={_event => dispatch(Click)}>
       {React.string(message)}
     </button>
@@ -47,5 +47,5 @@ let make = (~greeting) => {
       {React.string("Toggle greeting")}
     </button>
     {state.show ? React.string(greeting) : React.null}
-  </React.DOM.div>;
+  </div>;
 };

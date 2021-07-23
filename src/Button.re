@@ -10,10 +10,10 @@ let make =
     (
       ~size,
       ~onClick: ReactEvent.Mouse.t => unit,
-      ~children: React.element(React.keyed),
+      ~children: React.element,
     ) => {
   <button
-    style={ReactDOMRe.Style.make(
+    style={ReactDOM.Style.make(
       ~height=
         switch (size) {
         | Large => "30px"
